@@ -1,0 +1,119 @@
+<TemplatesExport family="File Templates">
+  <Template uid="e8628e1f-95e7-42f1-86cc-072393119d25" shortcut="" description="SpecificationWithAContract" text="using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.Contrib;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$contract_interface$,$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : concern_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="contract_interface" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="93b5b846-8261-4913-b62f-4f8d81d9455f" shortcut="" description="SpecificationWithoutAContract" text="using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.Contrib;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : concern_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="e8628e1f-95e7-42f1-86cc-072393119d25" shortcut="" description="SpecificationWithAContract" text="//-------------------------------------------------------------------------------------------------&#xD;&#xA;// &lt;auto-generated&gt; &#xD;&#xA;// Marked as auto-generated so StyleCop will ignore BDD style tests&#xD;&#xA;// &lt;/auto-generated&gt;&#xD;&#xA;//-------------------------------------------------------------------------------------------------&#xD;&#xA;&#xD;&#xA;using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.Contrib;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$contract_interface$,$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : context_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="contract_interface" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="93b5b846-8261-4913-b62f-4f8d81d9455f" shortcut="" description="SpecificationWithoutAContract" text="//-------------------------------------------------------------------------------------------------&#xD;&#xA;// &lt;auto-generated&gt; &#xD;&#xA;// Marked as auto-generated so StyleCop will ignore BDD style tests&#xD;&#xA;// &lt;/auto-generated&gt;&#xD;&#xA;//-------------------------------------------------------------------------------------------------&#xD;&#xA;&#xD;&#xA;using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.Contrib;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : context_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="e8628e1f-95e7-42f1-86cc-072393119d25" shortcut="" description="SpecificationWithAContract" text="//-------------------------------------------------------------------------------------------------&#xD;&#xA;// &lt;auto-generated&gt; &#xD;&#xA;// Marked as auto-generated so StyleCop will ignore BDD style tests&#xD;&#xA;// &lt;/auto-generated&gt;&#xD;&#xA;//-------------------------------------------------------------------------------------------------&#xD;&#xA;&#xD;&#xA;using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.AutoMocking.Rhino;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$contract_interface$,$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : context_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="contract_interface" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="93b5b846-8261-4913-b62f-4f8d81d9455f" shortcut="" description="SpecificationWithoutAContract" text="//-------------------------------------------------------------------------------------------------&#xD;&#xA;// &lt;auto-generated&gt; &#xD;&#xA;// Marked as auto-generated so StyleCop will ignore BDD style tests&#xD;&#xA;// &lt;/auto-generated&gt;&#xD;&#xA;//-------------------------------------------------------------------------------------------------&#xD;&#xA;&#xD;&#xA;using Machine.Specifications;&#xD;&#xA;using Machine.Specifications.AutoMocking.Rhino;&#xD;&#xA;&#xD;&#xA;namespace $namespace$&#xD;&#xA;{&#xD;&#xA;    public abstract class context_for_$concern_name$ : Specification&lt;$implementation$&gt;&#xD;&#xA;    {&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    [Subject(typeof($implementation$))]&#xD;&#xA;    public class when_$observation$ : context_for_$concern_name$&#xD;&#xA;    {&#xD;&#xA;		static object result;&#xD;&#xA;    &#xD;&#xA;		Establish context = () =&gt;&#xD;&#xA;			{&#xD;&#xA;&#xD;&#xA;			};&#xD;&#xA;    &#xD;&#xA;        Because of = () =&gt; result = subject.$this_happened$;&#xD;&#xA;&#xD;&#xA;        It should_$have_this_result$;&#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="namespace" expression="fileDefaultNamespace()" initialRange="-1" />
+      <Variable name="concern_name" expression="" initialRange="0" />
+      <Variable name="implementation" expression="" initialRange="0" />
+      <Variable name="observation" expression="" initialRange="0" />
+      <Variable name="this_happened" expression="" initialRange="0" />
+      <Variable name="have_this_result" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class1Specs" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+</TemplatesExport>
